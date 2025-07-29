@@ -1,0 +1,10 @@
+<!doctype html>
+<title>URL Shortener</title>
+<h1>Shorten your URL</h1>
+<form method="post">
+  <input type="text" name="url" placeholder="Paste your URL here">
+  <input type="submit" value="Shorten">
+</form>
+{% if short_url %}
+  <p>Your short URL: <a href="{{ short_url }}">{{ short_url }}</a></p>
+{% endif %}
